@@ -1,0 +1,33 @@
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0;">
+    <style>
+        * { box-sizing: border-box;}
+        .container { background-color: aqua;padding:10px;color:black}
+        /*for changing of very small devices like phones*/
+        @media only screen and (min-width:320px) {
+            .container { background-color: lightpink;}
+        }
+        /*for changing of small devices like tabs*/
+        @media only screen and (min-width:1024px) {
+            .container { background-color: blueviolet;}
+        }
+        /*medium devices like horizontal tabs*/
+        @media only screen and (min-width:1200px) {
+            .container { background-color: yellow;}
+        }
+        /*large devices like laptops*/
+        @media only screen and (min-width:1366px) {
+            .container { background-color:rgb(255, 0, 0);}
+        }
+        /*extra large devices like big laptops*/
+        @media only screen and (min-width:1400px) {
+            .container { background-color: lightgreen;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Breakpoints of media querie deppending on screen sizes</h1>
+    <div class="container">
+        <p style="font-weight: bolder;">change the size to witness different screen visibilities</p>
+    </div>
+</body>

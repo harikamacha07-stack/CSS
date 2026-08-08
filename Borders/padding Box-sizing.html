@@ -1,0 +1,53 @@
+<head>
+    <style>
+        .one {
+            box-sizing: content-box;
+            width: 200px;
+            height: 100px;
+            border: 10px solid rgb(46, 214, 13);
+        }
+        .two {
+            box-sizing: border-box;
+            width: 200px;
+            height: 100px;
+            border: 10px solid rgb(81, 11, 234);
+            padding: 20px;
+        }
+        .three {
+            box-sizing: padding-box;
+            width: 200px;
+            height: 100px;
+            border: 10px solid rgb(238, 112, 10);
+            padding: 20px;
+        }
+        .four {
+            box-sizing: inherit;
+            width: 200px;
+            height: 100px;
+            border: 10px solid rgb(220, 8, 8);
+            padding: 20px;
+        }
+        .five {
+            box-sizing: initial;
+            width: 200px;
+            height: 100px;
+            border: 10px solid rgb(218, 233, 14);
+            padding: 30px;
+        }
+        .six {
+            box-sizing: unset;
+            width: 200px;
+            height: 100px;
+            border: 10px solid rgb(220, 8, 8);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">This div uses content-box sizing.</div>
+    <div class="two">This div uses border-box sizing.</div>
+    <div class="three">This div uses padding-box sizing.</div>
+    <div class="four">This div inherits the box-sizing property from its parent.</div>
+    <div class="five">This div uses the initial value of box-sizing.</div>
+    <div class="six">This div unsets the box-sizing property.</div>
+</body>

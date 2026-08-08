@@ -1,0 +1,29 @@
+<head>
+    <style>
+        .container {
+            position:relative;color:black;
+        }
+        .pink { position:absolute; border:solid black 5px;
+
+            background-color: rgb(239, 21, 94);
+            z-index:3;width:300px;height:300px;
+        }
+        .aqua {       position:absolute;     border:solid black 5px;
+
+            background-color:aqua;z-index:1;
+width:500px;height:500px;
+        }
+        .burlywood { width:100px;height:100px;   border:solid black 5px;
+position:absolute;
+            background-color:burlywood;z-index:7;
+        }
+    </style>
+</head>
+<head>
+    <h1>z-index</h1>
+    <div class="container">
+        <div class="pink">middle</div>
+        <div class="aqua">least</div>
+        <div class="burlywood">large</div>
+    </div>
+</head>

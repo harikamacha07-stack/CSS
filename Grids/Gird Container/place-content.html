@@ -1,0 +1,36 @@
+<head>
+    <style>
+        .c1 {display:grid;background-color: aqua;padding: 5px;gap:5px;grid-template-columns: auto auto auto;height:300px;}
+        .c1 div {background-color: aliceblue;padding: 5px;text-align: center;font-size: large;}
+    </style>
+</head>
+<body>
+    <h1>align content</h1>
+    /*space evenly horitally and vertically center*/ 
+    <div class="c1" style="place-content: space-evenly center;">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+    </div>
+/*center for both*/ 
+    <div class="c1" style="place-content: center;">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+    </div>
+    /*start for horizontally and vertically end*/ 
+    <div class="c1" style="place-content: start end;">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+    </div>
+</body>

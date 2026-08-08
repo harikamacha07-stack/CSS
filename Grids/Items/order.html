@@ -1,0 +1,28 @@
+<head>
+<style>
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+  background-color: dodgerblue;
+  padding: 5px;
+}
+
+.container div {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+    <h1>ordering of items</h1>
+    <div class="container">
+            <div style="order:4">1</div>
+            <div style="order:3">2</div>
+            <div style="order:1">3</div>
+            <div style="order:5">4</div>
+            <div style="order:2">5</div>
+    </div>
+</body>

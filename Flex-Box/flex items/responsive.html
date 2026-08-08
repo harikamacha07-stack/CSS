@@ -1,0 +1,20 @@
+<head>
+    <style>
+        * {box-sizing: border-box;}
+        .c {display:flex;flex-direction: row;}
+        .i {background-color: aliceblue;color: black;text-align:center;width: 100%;height:auto;}
+        @media (max-width:1200px) { 
+            .c {flex-direction: column;}
+        }
+    </style>
+</head>
+<body>
+    <h1>responsive with 1 media</h1>
+    <!--change width to see difference between small and big screens-->
+    <div class="c">
+        <div class="i">1</div>
+        <div class="i">2</div>
+        <div class="i">3</div>
+        <div class="i">4</div>
+    </div>
+</body>

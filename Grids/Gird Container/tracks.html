@@ -1,0 +1,125 @@
+<head>
+    <style>
+        .c1 {display:grid;background-color: aqua;padding: 5px;gap:5px;width:auto;}
+        .c1 div {background-color: aliceblue;padding: 5px;text-align: center;font-size: large;}
+    </style>
+</head>
+<body>
+    <h1>Column-template types</h1>
+     /*fixed lengths*/ 
+    <div class="c1" style="grid-template-columns: 100px 500px 100px;">
+       
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+    </div>
+    /*pecentage lengths*/ 
+    <div class="c1" style="grid-template-columns: 10% 40% 50%;">
+    
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+    </div>
+    /*fr units*/
+    <div class="c1" style="grid-template-columns: 1fr 5fr 3fr;">
+         
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+    </div>
+    /*auto lengths*/ 
+    <div class="c1" style="grid-template-columns: auto auto auto;">
+        
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+    </div>
+    /* repeat*/
+    <div class="c1" style="grid-template-columns:repeat(2,1fr);">
+         
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+    </div>
+            /* minmax*/ 
+    <div class="c1" style="grid-template-columns:150px minmax(80px,1fr) 150px;">
+        /* minmax*/ 
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+    </div>
+    <h1>Row-template types</h1>
+     /*fixed lengths*/ 
+    <div class="c1" style="grid-template-rows: 100px 500px 100px;">
+       
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+    </div>
+    /*pecentage lengths*/ 
+    <div class="c1" style="grid-template-rows: 10% 40% 50%;">
+    
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+    </div>
+    /*fr units*/
+    <div class="c1" style="grid-template-rows: 1fr 5fr 3fr;">
+         
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+    </div>
+    /*auto lengths*/ 
+    <div class="c1" style="grid-template-rows: auto auto auto;">
+        
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+    </div>
+    /* repeat*/
+    <div class="c1" style="grid-template-rows:repeat(2,1fr);">
+         
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+    </div>
+    /* minmax*/ 
+    <div class="c1" style="grid-template-rows:150px minmax(80px,1fr) 150px;">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+    </div> 
+    /*fit-content*/ 
+    <div class="c1" style="grid-template-rows:fit-content(150px) 2fr;">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+    </div>
+</body>

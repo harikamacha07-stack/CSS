@@ -1,0 +1,77 @@
+<head>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+        }
+        th,td {
+            border:solid black 2px;
+            background-color: bisque;
+        }
+        tr:nth-child(even) {background-color:aliceblue;}
+        tr:hover {font-weight:bolder;}
+        th {
+            background-color: blue;padding: 10px;text-align: center;color:chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    /*collapse border*/
+    <table>
+        <tr>
+            <th>s.no</th>
+            <th>name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>hari</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>harish</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>harika</td>
+        </tr>
+    </table>
+    /*seperate boeders*/
+    <table style="border-collapse: separate;">
+        <tr>
+            <th>s.no</th>
+            <th>name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>hari</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>harish</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>harika</td>
+        </tr>
+    </table>
+    /*table only with table border*/ 
+    <table style="border: solid black;">
+        <tr>
+            <th style="border: none;">s.no</th>
+            <th style="border: none;">name</th>
+        </tr>
+        <tr>
+            <td style="border: none;">1</td>
+            <td style="border: none;">hari</td>
+        </tr>
+        <tr>
+            <td style="border: none;">2</td>
+            <td style="border: none;">harish</td>
+        </tr>
+        <tr>
+            <td style="border: none;">3</td>
+            <td style="border: none;">harika</td>
+        </tr>
+    </table>
+</body>

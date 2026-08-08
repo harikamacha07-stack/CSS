@@ -1,0 +1,36 @@
+<head>
+    <style>
+        #panel, .flip {
+               padding: 10px; margin: 5px;border: black solid 5px;
+            text-align: center;background-color: antiquewhite;color: brown;}
+            #panel {display:none;}
+    </style>
+</head>
+<body>
+    /*showing*/
+    <p class="flip" onclick="myFunction()">click to show</p>
+    <div id="panel">
+        <p>this is hidden text</p>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("panel").style.display="block";
+        }
+    </script>
+    /*both hiding and showing*/
+    <P class="flip" onclick="myFunction()">click to show/hide</P>
+    <div id="panel">
+        <p>this is hidden part</p>
+    </div>
+    <script>
+        function myFunction() {
+            var x=document.getElementById("panel");
+            if (x.style.display=="none") {
+                x.style.display="block";
+            }
+            else {
+                x.style.display="none";
+            }
+        }
+    </script>
+</body>

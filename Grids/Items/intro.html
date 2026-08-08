@@ -1,0 +1,61 @@
+<head>
+    <style>
+        .c1 {display:grid;background-color: aqua;padding: 5px;gap:5px;grid-template-columns:auto auto auto;}
+        .c1 div {background-color: aliceblue;padding: 5px;text-align: center;font-size: large;}
+        .i1 {grid-column-start: 1;grid-column-end: 3;}
+        .i2 {grid-row-start: 1;grid-row-end: 3;}
+        .i3 {grid-column: 1 / span 2;}
+        .i4 {grid-row: 1 / span 2;}
+        .i5 {grid-area: 1 / 1 / span 2 / span 2;}
+    </style>
+</head>
+<body>
+    <h1>column items</h1>
+    /*column start at 1 and end at 3*/
+    <div class="c1">
+            <div class="i1">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+    </div>
+    /*column start at 1 and end at 3 using grid-column*/
+    <div class="c1">
+            <div class="i3">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+    </div>
+    <h1>row items</h1>
+    /*row start at 1 and end at 3*/
+    <div class="c1">
+            <div class="i2">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+    </div>
+    /*row start at 1 and end at 3 using grid-row*/
+    <div class="c1">
+            <div class="i4">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+    </div>
+    <h1>grid area</h1>
+    /*row-start column-start row-end column-end*/
+    <div class="c1">
+            <div class="i5">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+    </div>
+</body>

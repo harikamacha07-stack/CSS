@@ -1,0 +1,93 @@
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.c {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile first */
+.c > * {
+  border: 1px solid green;
+  background-color: beige;
+  padding: 10px;
+  grid-column: col-start / span 12;
+}
+
+@media (min-width: 576px) {
+  .sidebar {
+    grid-column: col-start / span 3;
+    grid-row: 3;
+  }
+  .ads {
+    grid-column: col-start / span 3;
+  }
+  .content, .footer {
+    grid-column: col-start 4 / span 9;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    grid-column: col-start / span 2;
+    grid-row: 2 / 4;
+  }
+  .content {
+    grid-column: col-start 3 / span 8;
+    grid-row: 2 / 4;
+  }
+  .sidebar {
+    grid-column: col-start 11 / span 2;
+  }
+  .ads {
+    grid-column: col-start 11 / span 2;
+  }
+  .footer {
+    grid-column: col-start / span 12;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="c">
+  <header class="head">Header/Company Logo</header>
+  <nav class="nav">
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <h1>Content area</h1>
+    <p>Here we display the sections in source order for screens less than 576 pixels wide.</p>
+    <p>Then, we go to a two column layout for screens between 576 and 767 pixels wide.</p>
+    <p>Then, we go to a three column layout for screens over 767 pixels wide.</p>
+    <p>Resize the browser window to see the responsive effect.</p>
+  </div>
+  <div class="sidebar">Sidebar</div>
+  <div class="ads">Ads</div>
+  <footer class="footer">The footer</footer>
+</div>
+</body>

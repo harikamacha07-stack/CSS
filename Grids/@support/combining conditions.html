@@ -1,0 +1,40 @@
+<head>
+    <style>
+        .c { float: left;}
+        @supports not (display:flex) {
+            .c { display: flex; background-color: blue;}
+        }
+        .c > div { background-color: antiquewhite;margin: 10px;padding: 5px;font-size: medium;}
+        .c1 { float: left;}
+        @supports (display:grid) and (gap:10px){
+            .c1 { display: grid; background-color: yellow;}
+        }
+        .c1 > div { background-color: antiquewhite;margin: 10px;padding: 5px;font-size: medium;}
+        .c2 { float: left;}
+        @supports (display:grid) or (gap:10px){
+            .c2 { display: grid; background-color: red;}
+        }
+        .c2 > div { background-color: antiquewhite;margin: 10px;padding: 5px;font-size: medium;}
+    </style>
+</head>
+<body>
+    <h1>supports combinators</h1>
+    <!--not-->
+    <div class="c">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--and-->
+    <div class="c1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+   <!--or-->
+    <div class="c2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>

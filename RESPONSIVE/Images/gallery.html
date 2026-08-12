@@ -1,0 +1,87 @@
+<head>
+   <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; margin: 0; background-color:black; } 
+    .header { background-color: #f1f1f1; padding: 20px; text-align: center; }
+    .container {
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+        padding: 0 4px;
+    }
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    } 
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+    @media screen and (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+   </style>
+</head>
+<body>
+    <h1>My Gallery</h1>
+    <div class="container">
+        <div class="column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc86npT2aeAMpolPtzrm1rW0bTNeL0Y49brkO2LMZB8g&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVmIBUuSyc0aUGXsuuUy-ymFN92VkcdZPeojCknxvDng&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREt23DpYr5jMJQAaUf3F6SesMMEby-wNBuOa61kX94LQ&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZbXFFJAudXX1k9j-M9um54McboQtdpFqugPPwoXZ-w&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW3RJQUMJCYf4RcqZvVjI9nCnu2fMmfhib6fdszSDxqg&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTrcFTLj-g26g-t4dcsXjjaJUgyXvbCVuv_62pQHPqA&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBgifyaKHaIYVZIW-cCZlr29dfZ7WIGZr2_zC7ktdSug&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8AtkomdmXoLU6Com8Dtpr09NinaWCorQQ1hukh4t0Zg&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPabWoaKUG0QbdyOYVEYzooUEaQkuuuZHPfXmyn77vg&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc86npT2aeAMpolPtzrm1rW0bTNeL0Y49brkO2LMZB8g&s=10">
+        </div>
+        <div class="column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc86npT2aeAMpolPtzrm1rW0bTNeL0Y49brkO2LMZB8g&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVmIBUuSyc0aUGXsuuUy-ymFN92VkcdZPeojCknxvDng&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREt23DpYr5jMJQAaUf3F6SesMMEby-wNBuOa61kX94LQ&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZbXFFJAudXX1k9j-M9um54McboQtdpFqugPPwoXZ-w&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW3RJQUMJCYf4RcqZvVjI9nCnu2fMmfhib6fdszSDxqg&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTrcFTLj-g26g-t4dcsXjjaJUgyXvbCVuv_62pQHPqA&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBgifyaKHaIYVZIW-cCZlr29dfZ7WIGZr2_zC7ktdSug&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8AtkomdmXoLU6Com8Dtpr09NinaWCorQQ1hukh4t0Zg&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPabWoaKUG0QbdyOYVEYzooUEaQkuuuZHPfXmyn77vg&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc86npT2aeAMpolPtzrm1rW0bTNeL0Y49brkO2LMZB8g&s=10">
+        </div>
+        <div class="column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc86npT2aeAMpolPtzrm1rW0bTNeL0Y49brkO2LMZB8g&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVmIBUuSyc0aUGXsuuUy-ymFN92VkcdZPeojCknxvDng&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREt23DpYr5jMJQAaUf3F6SesMMEby-wNBuOa61kX94LQ&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZbXFFJAudXX1k9j-M9um54McboQtdpFqugPPwoXZ-w&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW3RJQUMJCYf4RcqZvVjI9nCnu2fMmfhib6fdszSDxqg&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTrcFTLj-g26g-t4dcsXjjaJUgyXvbCVuv_62pQHPqA&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBgifyaKHaIYVZIW-cCZlr29dfZ7WIGZr2_zC7ktdSug&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8AtkomdmXoLU6Com8Dtpr09NinaWCorQQ1hukh4t0Zg&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPabWoaKUG0QbdyOYVEYzooUEaQkuuuZHPfXmyn77vg&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc86npT2aeAMpolPtzrm1rW0bTNeL0Y49brkO2LMZB8g&s=10">
+        </div>
+        <div class="column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc86npT2aeAMpolPtzrm1rW0bTNeL0Y49brkO2LMZB8g&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVmIBUuSyc0aUGXsuuUy-ymFN92VkcdZPeojCknxvDng&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREt23DpYr5jMJQAaUf3F6SesMMEby-wNBuOa61kX94LQ&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZbXFFJAudXX1k9j-M9um54McboQtdpFqugPPwoXZ-w&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW3RJQUMJCYf4RcqZvVjI9nCnu2fMmfhib6fdszSDxqg&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTrcFTLj-g26g-t4dcsXjjaJUgyXvbCVuv_62pQHPqA&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBgifyaKHaIYVZIW-cCZlr29dfZ7WIGZr2_zC7ktdSug&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8AtkomdmXoLU6Com8Dtpr09NinaWCorQQ1hukh4t0Zg&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPabWoaKUG0QbdyOYVEYzooUEaQkuuuZHPfXmyn77vg&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc86npT2aeAMpolPtzrm1rW0bTNeL0Y49brkO2LMZB8g&s=10">
+        </div>
+    </div>
+</body>
